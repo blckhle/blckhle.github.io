@@ -6,7 +6,6 @@ body, html {
   user-select: none;
   display: grid;
 }
-
 .liquid-button {
   margin: auto;
   /*background-color: #ff65003d!important;*/
