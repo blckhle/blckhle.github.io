@@ -16,11 +16,13 @@ body, html {
   font-weight: 900;
   opacity: .5;
 }
-.liquid-button path {cursor: pointer;
+.liquid-button path {
+  cursor: pointer;
 }
-
 #form{color:white;}
 textarea {
-  font-size: 3em;
+  font-size: larger;
   color: white;
+  background-color: #0000006b;
+  border-radius: 5px;
 }
