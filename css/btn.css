@@ -6,6 +6,7 @@ body, html {
   user-select: none;
   display: grid;
 }
+
 .liquid-button {
   margin: auto;
   /*background-color: #ff65003d!important;*/
@@ -19,10 +20,21 @@ body, html {
 .liquid-button path {
   cursor: pointer;
 }
-#form{color:white;}
+.btn_cntnr {
+  z-index: 123;
+  position: relative;
+}.btn_cntnr {
+  z-index: 123;
+  position: relative;
+}
+#form{    color: white;
+  position: relative;
+  top: 45px;}
 textarea {
   font-size: larger;
   color: white;
   background-color: #0000006b;
-  border-radius: 5px;
+  border-radius: 70%;
+  width: 25vh;
+  height: 25vh;
 }
