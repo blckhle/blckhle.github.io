@@ -1,0 +1,28 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  display: grid;
+}
+
+.liquid-button {
+  margin: auto;
+  /*background-color: #ff65003d!important;*/
+  border-radius: 115px;
+  position: relative;
+  top: 35vh;
+  text-align: center;
+  font-weight: 900;
+}
+.liquid-button path {
+  cursor: pointer;
+}
+
+#form{color:white;}
+textarea {
+  overflow: auto;
+  resize: vertical;
+  color: white;
+}
