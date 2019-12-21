@@ -1,5 +1,4 @@
 const ipfs = window.IpfsHttpClient('ipfs.infura.io', '5001', { protocol: 'https' });
-
 $("#upload").on("change", function() {
   var reader = new FileReader();
   reader.onload = function (e) {
