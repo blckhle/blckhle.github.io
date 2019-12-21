@@ -217,3 +217,11 @@ footer h3 {
     padding: 6px 12px;
     cursor: pointer;
 }
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
