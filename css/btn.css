@@ -27,7 +27,7 @@ body, html {
   z-index: 123;
   position: relative;
 }
-#form{    color: white;
+#form{ top:90px; z-index:1000;   color: white;
   position: relative;
   top: 45px;}
 textarea {
