@@ -107,6 +107,9 @@ input.sw:checked + label {
   box-shadow: inset 0 0 0px 25px #e4e4e4;
   transition: box-shadow 2.5s cubic-bezier(0, 1.2, 0.94, 0.95);
 }
+input#upload {
+  display: none;
+}
 
 /* Pen Style */
 body {
