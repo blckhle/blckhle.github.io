@@ -19,7 +19,9 @@ div#result {
   max-width: 50%;
   word-break: break-all;
 }
-#status{text-align: center;}
+#status{text-align: center;
+    font-weight: 700;
+    padding-top: 15px;}
 span.post_label {
   padding: 8px;
  /* background-color: cadetblue; */
