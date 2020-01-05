@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>test</title>
+  <script src='https://unpkg.com/ipfs@0.39.0/dist/index.min.js'></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+
+  <span class="button is-warning" id="hash" ></span>
+
+<div class="content" style="background-color:transparent;">
+  <div class="field has-addons">
+    <div class="control">
+
+      <span class="button is-warning" id="type" style="
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    color: white;
+    font-weight: 700;
+    left: -65px;
+    padding: 8px;
+    position: absolute;
+    height: 40px;
+    width: 64px;
+      ">
+        </span>
+
+
+      <input class="input" type="text" id="input" placeholder="" style="
+    border: none;">
+    </div>
+    <div class="control">
+      <a class="button is-warning" onclick="get()" style="
+      border-bottom-right-radius: 0;border-top-right-radius: 0;color: white;
+      font-weight: 700;">
+          key
+        </a>
+        <a class="button is-warning" onclick="post()" style="
+        left:-4px;color: white;
+        font-weight: 700;">
+            val
+          </a>
+    </div>
+
+
+    
+  </div>
+
+  <div id="result"></div>
+<!--<div id="result"></div>-->
+
+
+</div>
+
+
+
+<script>
+async function main () {
+
+ /* const node1 = new Ipfs({ repo: 'ipfs-' + Math.random() })
+  console.log(node1)*/
+
+  const node = await window.Ipfs.create()
+  console.log(node)  
+  document.getElementById("hash").innerHTML=JSON.stringify(node);;
+  const filesAdded = await node.add('Hello world!')
+  console.log('node')
+      filesAdded.forEach((file) => document.getElementById("hash").innerHTML = file.hash,
+       console.log('successfully stored', file.hash))
+  // Ready to use
+  // See https://github.com/ipfs/js-ipfs#core-api
+}
+main()
+
+  input.oninput = function() {
+    result.innerHTML = input.value;
+  };
+
+  function get() {
+  var x = document.getElementById("input").value;
+  document.getElementById("result").innerHTML = x;
+  document.getElementById("type").innerHTML = '<span class="get_label">GET</span>';
+}
+
+
+/*
+async function post() {
+  var x = document.getElementById("input").value;
+  document.getElementById("result").innerHTML = x;
+  document.getElementById("type").innerHTML = ' <span class="post_label">POST</span>';
+
+  const node = await window.Ipfs.create()
+  const result = await node.add(x)
+  console.log(result)
+  document.getElementById("hash").innerHTML = result[0].hash;
+
+}
+*/
+
+
+async function post () {
+      var x = document.getElementById("input").value;
+      const filesAdded = await node.add(x)
+      filesAdded.forEach((file) => console.log('successfully stored', file.hash))
+    }
+
+
+
+
+
+  async function addFile () {
+    const node = await window.Ipfs.create()
+    const filesAdded = await node.add('Hello world!')
+      filesAdded.forEach((file) => document.getElementById("hash").innerHTML = file.hash,  console.log('successfully stored', file.hash))
+    }
+
+    addFile()
+
+
+
+</script>
+
+
+
+
+<script>
+            // get input val
+            var inputVal = document.getElementById("Input").value;
+            document.getElementById("result").innerHTML=inputVal;
+
+            input.oninput = function() {
+            result.innerHTML = input.value;
+  };
+
+  </script>
+  
+</body>
+</html>
