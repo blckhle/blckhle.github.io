@@ -16,8 +16,11 @@ input:focus {
   background-color: #fff!important;
 }
 div#result {
-  max-width: 50%;
+  max-width: 54%;
   word-break: break-all;
+  font-size: 1.15em;
+  font-weight: 600;
+  color: #29bd5d;
 }
 #status{text-align: center;
     font-weight: 700;
