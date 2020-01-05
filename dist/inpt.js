@@ -1,3 +1,7 @@
+input.oninput = function() {
+  result.innerHTML = input.value;
+};
+
 document.addEventListener('DOMContentLoaded', async () => {
     const node = await Ipfs.create({ repo: 'ipfs-' + Math.random() })
     window.node = node
@@ -5,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const status = node.isOnline() ? 'online' : 'offline'
 
     console.log(`Node status: ${status}`)
-    document.getElementById('status').innerHTML = `status: ${status}`
+    document.getElementById('status').innerHTML = `статус: ${status}`
 
     // You can write more code here to use it. Use methods like
     // node.add, node.get. See the API docs here:
@@ -75,7 +79,7 @@ var returnObj = JSON.parse(localStorage.getItem("myKey")) //спарсим ег�
 
 
 
-
+/*
 function rec() {
 var record;
 record = document.createElement('a');
@@ -86,8 +90,7 @@ nm = document.getElementById("obj").appendChild(record);
 }
 rec();
 document.getElementById("hashr").innerHTML = returnObj.name
-
-
+*/
 
 
 
