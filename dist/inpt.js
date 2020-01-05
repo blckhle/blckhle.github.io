@@ -1,23 +1,17 @@
 input.oninput = function() {
   result.innerHTML = input.value;
+  ww = input.value;
+  w = ww.length
+  type.innerHTML =  ww.length;
 };
-
 document.addEventListener('DOMContentLoaded', async () => {
     const node = await Ipfs.create({ repo: 'ipfs-' + Math.random() })
     window.node = node
-
     const status = node.isOnline() ? 'online' : 'offline'
-
     console.log(`Node status: ${status}`)
-    document.getElementById('status').innerHTML = `статус: ${status}`
-
-    // You can write more code here to use it. Use methods like
-    // node.add, node.get. See the API docs here:
-    // https://github.com/ipfs/interface-ipfs-core
+    document.getElementById('status').innerHTML = `статус:${status}`
   })
-
-
-  async function addFile () {
+ async function addFile () {
     s = ' '; s = s.replace(/^\s+|\s+$/g, ''); if(document.getElementById("input").value == s){     
         alert("пусто");
        
@@ -59,48 +53,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById("type").innerHTML = '<span class="get_label">GET</span>';
         }
     }
-
-
-/*
-    //создадим объект
-var obj = {
-	name: 'name' ,
-	date: 'date' ,
-	hash: 'hash'
-};
-
-var serialObj = JSON.stringify(obj); //сериализуем его
-
-localStorage.setItem("myKey", serialObj); //запишем его в хранилище по ключу "myKey"
-
-var returnObj = JSON.parse(localStorage.getItem("myKey")) //спарсим его обратно объект
-
-//nme = document.getElementById("obj").innerHTML = returnObj.name
-
-
-
-
-function rec() {
-var record;
-record = document.createElement('a');
-record.setAttribute('id', 'hashr');
-record.setAttribute('href', 'https://node/get/hash/');
-record.setAttribute('target', 'blank');
-nm = document.getElementById("obj").appendChild(record);
-}
-rec();
-document.getElementById("hashr").innerHTML = returnObj.name
-*/
-
-
-
-
-
-
-
-
-
-
 
 const ipfs = window.IpfsHttpClient('ipfs.infura.io', '5001', { protocol: 'https' });
 $("#upload").on("change", function() {
