@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
 
-
+/*
     //создадим объект
 var obj = {
 	name: 'name' ,
@@ -79,7 +79,7 @@ var returnObj = JSON.parse(localStorage.getItem("myKey")) //спарсим ег�
 
 
 
-/*
+
 function rec() {
 var record;
 record = document.createElement('a');
