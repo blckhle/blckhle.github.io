@@ -1,4 +1,5 @@
-html{overflow:hidden;background: radial-gradient(circle, rgba(255, 240, 135, 0.44) 0%, rgba(252, 186, 0, 0.7455357142857143) 70%, rgba(252, 151, 0, 0.7455357142857143) 100%);
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+html{overflow: hidden;background: radial-gradient(circle, rgba(255, 240, 135, 0.44) 0%, rgba(252, 186, 0, 0.7455357142857143) 70%, rgba(252, 151, 0, 0.7455357142857143) 100%);
   background-repeat: no-repeat;
   height: 100%;    width: 100%;}
   ::-webkit-scrollbar{width:0px;}
@@ -22,9 +23,9 @@ div#result {
   font-weight: 600;
   color: #29bd5d;
 }
-#status{text-align: center;
-    font-weight: 700;
-    padding-top: 15px;}
+#status{    text-align: center;
+  font-weight: 700;
+  padding-top: 15px;}
 span.post_label {
   padding: 8px;
  /* background-color: cadetblue; */
@@ -38,6 +39,10 @@ span.get_label {
   position: absolute;
   top: 2%;
 }
+
+
+
+
 
 
 
@@ -121,11 +126,12 @@ body {
   height: 100%;
   width: 100%;
   overflow:hidden;
+  font-family: 'Press Start 2P', cursive;
 }
 
 h1 {
   font-weight: 200;
-  font-size: 46px;
+  font-size: 26px;
   line-height: 30px;
 }
 
@@ -145,7 +151,7 @@ h2 {
   width: 700px;
   margin: 30px auto;
   top: 10%;
-  left: 30px;
+  left: 25px;
   position: relative;
 }
 
