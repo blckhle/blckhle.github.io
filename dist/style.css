@@ -1,4 +1,4 @@
-html{background: radial-gradient(circle, rgba(255, 240, 135, 0.44) 0%, rgba(252, 186, 0, 0.7455357142857143) 70%, rgba(252, 151, 0, 0.7455357142857143) 100%);
+html{overflow:hidden;background: radial-gradient(circle, rgba(255, 240, 135, 0.44) 0%, rgba(252, 186, 0, 0.7455357142857143) 70%, rgba(252, 151, 0, 0.7455357142857143) 100%);
   background-repeat: no-repeat;
   height: 100%;    width: 100%;}
   ::-webkit-scrollbar{width:0px;}
