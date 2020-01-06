@@ -1,3 +1,6 @@
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 500);
 const ipfs = window.IpfsHttpClient('ipfs.infura.io', '5001', { protocol: 'https' });
 input.oninput = function() {
   result.innerHTML = input.value;
