@@ -23,6 +23,13 @@ div#result {
   font-weight: 600;
   color: #29bd5d;
 }
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
 a#hash {
   max-width: 54%;
   word-break: break-all;
