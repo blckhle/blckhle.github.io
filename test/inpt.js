@@ -1,3 +1,4 @@
+const ipfs = window.IpfsHttpClient('ipfs.infura.io', '5001', { protocol: 'https' });
 input.oninput = function() {
   result.innerHTML = input.value;
   ww = input.value;
@@ -11,9 +12,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   //console.log(`Node status: ${status}`)
     document.getElementById('status').innerHTML = `статус:${status}`
   })
-
   async function addFile () {
-    s = ' '; s = s.replace(/^\s+|\s+$/g, ''); if(document.getElementById("input").value == s){     
+    s = ' '; s = s.replace(/^\s+|\s+$/g, '');if(document.getElementById("input").value == s){     
         alert("пусто");    
     } else {
       var x = document.getElementById("input").value;
@@ -27,12 +27,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       document.getElementById("type").innerHTML = ' <span class="post_label">POST</span>';
       }
   }
-   async function catFile () {s = ' ';s = s.replace(/^\s+|\s+$/g, '');
-        if (document.getElementById("input").value == s){                       
+   async function catFile(){s = ' ';s = s.replace(/^\s+|\s+$/g, '');if(document.getElementById("input").value == s){                       
             alert("пусто");           
         } else {
       var x = document.getElementById("input").value;
-     // const data = await node.cat('QmWNxiFjzTuh8gfZmNvWwYSU9qGvEYiqfgu3FgoRw94doU')
       const data = await node.cat(x)
       console.log(data.toString())
   document.getElementById("result").innerHTML = data.toString();
@@ -43,9 +41,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById("type").innerHTML = '<span class="get_label">GET</span>';
         }
     }
-
-const ipfs = window.IpfsHttpClient('ipfs.infura.io', '5001', { protocol: 'https' });
-$("#upload").on("change", function() {
+  $("#upload").on("change", function() {
   var reader = new FileReader();
   reader.onload = function (e) {
     const magic_array_buffer_converted_to_buffer = buffer.Buffer(reader.result);
