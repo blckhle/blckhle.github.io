@@ -1,11 +1,9 @@
-body {
-	
+body {	
 	background: white;
 	color: black;
 	margin: 0;
 	overflow: hidden;
 	/*background-image: linear-gradient(45deg, #00ff2b38 15%, #00ff0000 5%);*/
-
 }
 
 h1 {
