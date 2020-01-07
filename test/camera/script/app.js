@@ -31,7 +31,6 @@
 				capturing = !capturing;
 			};
 		},
-
 		onError: function(error) {
 			// TODO: log error
 		},
