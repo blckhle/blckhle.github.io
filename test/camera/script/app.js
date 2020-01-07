@@ -6,7 +6,6 @@
 		height: 140,
 		fps: 30,
 		mirror: true,
-
 		onFrame: function(canvas) {
 			ascii.fromCanvas(canvas, {
 				// contrast: 128,
