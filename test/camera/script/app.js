@@ -14,7 +14,6 @@
 				}
 			});
 		},
-
 		onSuccess: function() {
 			document.getElementById("info").style.display = "none";
 
