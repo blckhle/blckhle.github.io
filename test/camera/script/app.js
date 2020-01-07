@@ -1,7 +1,6 @@
 (function() {
 	var asciiContainer = document.getElementById("ascii");
 	var capturing = false;
-
 	camera.init({
 		width: 200,
 		height: 140,
