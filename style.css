@@ -2345,6 +2345,7 @@ body .panel {
   background: white;
   padding: 10px 60px 0px 60px;
   overflow: scroll;
+  display: none;
 }
 body .panel body::-webkit-scrollbar {
   width: 1em;
