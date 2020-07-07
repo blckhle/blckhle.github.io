@@ -15,9 +15,9 @@ color: white!important;
 }
 
 text.text {
-    color: white!important;
+        fill: #0fab0091!important;
 }
 
 circle {
-    fill: #3d670091!important;
+       fill: #c5bf64!important;
 }
