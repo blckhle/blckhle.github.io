@@ -5,4 +5,6 @@ line.link {
     stroke-width: 2!important;
 }
  
-.graph { color: white!important; }
+P,span,.graph {
+ color: white!important;
+ }
