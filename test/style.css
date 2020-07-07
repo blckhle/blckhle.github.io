@@ -3,6 +3,13 @@ line.link {
     stroke: brown!important;
     stroke-width: 2!important;
 }
-P,span,.graph {
+.graph {
  color: white!important;
  }
+p { 
+color: white!important;
+}
+
+span { 
+color: white!important;
+}
