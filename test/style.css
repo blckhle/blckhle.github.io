@@ -17,3 +17,7 @@ color: white!important;
 text.text {
     color: white!important;
 }
+
+circle {
+    fill: #3d670091!important;
+}
