@@ -107,6 +107,58 @@
         font-weight: 700;"> <i class="fa fa-file" aria-hidden="true"></i> </label>
 			</div></div><div id="result"></div><h1 id="obj"></h1></div>
   <input id="upload" type="file" />
+
+  <div class="graph"></div>
+    <script>
+        let graph = new window.P2PGraph('.graph')
+    
+        graph.add({
+          id: 'You',
+          me: true,
+          name: 'Ты'
+        })
+
+        setTimeout(() => {
+        graph.add({
+          id: 'Thing1',
+          me: false,
+          name: '192.168.1.20'
+        })
+        graph.connect('You', 'Thing1')
+      }, 1000)
+
+      setTimeout(() => {      
+        graph.add({
+          id: 'Thing2',
+          me: false,
+          name: '192.168.1.44'
+        })
+        graph.connect('You', 'Thing2')
+      }, 2000)
+
+
+        setTimeout(() => {      
+        graph.add({
+          id: 'Thing3',
+          me: false,
+          name: '192.168.1.72'
+        })
+        graph.connect('Thing1', 'Thing3')
+      }, 3000)
+
+
+setTimeout(() => {      
+        graph.add({
+          id: 'Thing4',
+          me: false,
+          name: '192.168.1.12'
+        })
+        graph.connect('Thing1', 'Thing4')
+      }, 4000)
+
+
+      </script>
+
   <div class="footer">
       <a href="https://ipfs.io/ipfs/QmdrirJNUzJMYysKep2oeaMeVn1n25bgitX52bnVUkkEZc/">ipfs</a><a href="https://ipfs.io/ipfs/QmTneyxUFv14TmViMNpN6n51wK1WFJ3bVcNgn3V2bzpgmQ" style="position: relative;display: block;bottom: 17px;left: 22vh;width: 20px;top: -24px;"><i class="fa fa-music" aria-hidden="true"></i></a><a style="color:transparent;padding:20px;" href="pay.html">Яндекс деньги</a>
   </div>
