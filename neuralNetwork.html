@@ -27,7 +27,7 @@
         }
       
         const scaledData = dailyStats.map(scaleDown);
-      
+  
         const trainingData = [
           scaledData.slice(0, 5),
           scaledData.slice(5, 10),
@@ -72,5 +72,4 @@
           trainingData[3][4]
         ], 3).map(scaleUp)));
     });
-
 </script>
