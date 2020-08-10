@@ -3,7 +3,7 @@
 <script src="brain.js"></script>
 
 <script>
-    axios.get(`https://financialmodelingprep.com/api/v3/historical-price-full/AAPL?serietype=line&apikey=demo`)
+    axios.get(`https://financialmodelingprep.com/api/v3/historical-price-full/AMZN?&apikey=56a2ef900f2b1348e6c09d86c5818cf9`)
     .then((response) => {
       var a = response.data;
       var dailyStats = a.historical.reverse();
