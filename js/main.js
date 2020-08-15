@@ -36,7 +36,7 @@ axios.get(`https://financialmodelingprep.com/api/v3/historical-price-full/AMZN?&
         net.train(trainingData, {
           learningRate: 0.005,
           errorThresh: 0.02,
-     //    log: (stats) => document.getElementById("train").innerHTML = (stats)
+          log: (stats) => console.log(stats)
          
         });
       
