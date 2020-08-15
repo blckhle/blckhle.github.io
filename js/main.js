@@ -2,7 +2,6 @@ axios.get(`https://financialmodelingprep.com/api/v3/historical-price-full/AMZN?&
  .then((response) => {
       var a = response.data;
       var dailyStats = a.historical.reverse();
-       //console.log(dailyStats)
       function scaleDown(step) { // normalize
           return {
               open: step.open / 138,
