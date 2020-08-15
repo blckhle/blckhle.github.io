@@ -19,7 +19,6 @@ axios.get(`https://financialmodelingprep.com/api/v3/historical-price-full/AMZN?&
           };
         } 
         const scaledData = dailyStats.map(scaleDown);   
- 
         const trainingData = [
           scaledData.slice(0, 5),
           scaledData.slice(5, 10),
