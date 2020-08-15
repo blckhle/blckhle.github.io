@@ -25,8 +25,7 @@ axios.get(`https://financialmodelingprep.com/api/v3/historical-price-full/AMZN?&
           scaledData.slice(5, 10),
           scaledData.slice(10, 15),
           scaledData.slice(15, 20),
-        ];
-      
+        ];   
         const net = new brain.recurrent.LSTMTimeStep({
           inputSize: 4,
           hiddenLayers: [8, 8],
