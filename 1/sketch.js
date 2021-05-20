@@ -72,7 +72,7 @@ function gotResult(error, results) {
 
 function whoFunction() {
   var x = document.createElement("IFRAME");
-  x.setAttribute("src", "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks");
+  x.setAttribute("src", "");
   x.style.width = '640px';x.style.display = 'none';
   x.style.height = '520'
   document.body.appendChild(x);
